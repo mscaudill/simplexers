@@ -1,8 +1,10 @@
 # requirements for simplexers development environment
 name: simplexers
-dependecies:
+dependencies:
   - numpy
   - scipy
+  - ipython
+  - notebook
   # testing
   - pytest
   - pytest-cov
