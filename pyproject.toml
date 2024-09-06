@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 keywords = ["machine learning", "large-scale optimization"]
 
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 3 - Alpha",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python",
     "License :: OSI Approved :: BSD License",
@@ -32,16 +32,16 @@ dependencies = [
 dev = ["isort",
     "mypy",
     "pylint",
-    "bumpver",
-    "codespell",
     "black",
+    "codespell",
+    "pytest",
+    "pytest-cov",
+    "pytest-lazy-fixture",
+    "bumpver",
     "mkdocs",
     "mkdocs-material",
     "mkdocstrings[python]",
     "mkdocs-jupyter",
-    "pytest",
-    "pytest-cov",
-    "pytest-lazy-fixture",
     "pip-tools",
     "build",
     "twine"
@@ -63,7 +63,7 @@ push = true
 
 [tool.bumpver.file_patterns]
 "pyproject.toml" = [
-    'current_version = "{version}"', 
+    'current_version = "{version}"',
     'version = "{version}"'
 ]
 "src/simplexers/__init__.py" = ['__version__ = "{version}"']
