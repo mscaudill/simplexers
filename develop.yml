@@ -1,0 +1,31 @@
+# requirements for simplexers development environment
+name: simplexers
+dependecies:
+  - numpy
+  - scipy
+  # testing
+  - pytest
+  - pytest-cov
+  # Linting and formatting
+  - isort
+  - mypy
+  - pylint
+  # pypi packages
+  - pip
+  - pip:
+      # formatting
+      - black
+      - codespell
+      # testing
+      - pytest-lazy-fixture
+      # versioning
+      - bumpver
+      # doc builders
+      - mkdocs
+      - mkdocs-material
+      - "mkdocstrings[python]"
+      - mkdocs-jupyter
+      # packaging
+      - pip-tools
+      - build
+      - twine
