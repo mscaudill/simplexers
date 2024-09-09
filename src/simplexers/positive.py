@@ -3,9 +3,9 @@
 import numpy as np
 import numpy.typing as npt
 
-from simplexers import arraytools
+from simplexers.core import arraytools
 
-def positive_simplexer(y: npt.NDArray, s: int = 1, axis: int = -1):
+def _sorting_simplexer(y: npt.NDArray, s: int = 1, axis: int = -1):
     """Computes the Euclidean projection of each 1-D array in y along axis onto
     the positive simplex.
 
