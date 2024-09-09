@@ -84,7 +84,11 @@ def _sorting_simplexer(arr: npt.NDArray, s: int) -> npt.NDArray:
     return result
 
 def _root_simplexer(arr: npt.NDArray, s: float, **kwargs):
-    """ """
+    """Computes the Euclidean projection of each 1-D array in arr onto the
+    s-capped simplex by finding the critical points of the Lagrangian.
+
+    #TODO COMPLETE
+    """
 
     gamma_lows = np.min(arr, axis=1) - 1
     gamma_highs = np.max(arr, axis=1)
@@ -105,7 +109,6 @@ def _root_simplexer(arr: npt.NDArray, s: float, **kwargs):
 
     return result
 
-
 def capped_simplexer(
     arr: npt.NDArray,
     s: int = 1,
@@ -113,16 +116,43 @@ def capped_simplexer(
     method: str = 'root',
     **kwargs,
 ) -> npt.NDArray:
-    """ """
+    """Computes the Euclidean projection of each 1-D array in arr onto the
+    s-capped simplex.
 
-    methods = {
-            'sort': _sorting_simplexer,
-            'root': _root_simplexer,
-            'probability': positive._sorting_simplexer
-            }
-    if method == 'probability' and s != 1:
-        msg = 'A capped probability simplex requires a sum constraint of s=1'
-        raise ValueError(msg)
+    Args:
+        arr:
+            A 2-D numpy array of vectors to project onto the s-capped simplex.
+        s:
+            The sum constraint for each vector.
+        axis:
+            The axis of arr containing vector components to project onto the
+            simplex.
+        method:
+            A string method name specifying the algorithm used to make the
+            projection. Must be one of {'root', 'sort'}. The 'root' method finds
+            the roots of the derivative of the Lagrangian using Brents method.
+            This method is O(n) where n is the number of vector components to
+            project (See Reference 1). 'Sort' uses the O(n**2) sorting algorithm
+            of Reference 2. For vectors with very few components it will have a
+            speed advantage.
+        kwargs:
+            Any valid keyword only arguments for scipy.optimize.brentq function
+
+    Returns:
+        A 2-D array of vector projections one per vector in arr.
+
+    Raises:
+        A ValueError is issued if the input arr is not 1D or 2D.
+
+    References:
+        1. Andersen Ang, Jianzhu Ma, Nianjun Liu, Kun Huang, Yijie Wang, Fast
+           Projection onto the Capped Simplex with Applications to Sparse
+           Regression in Bioinformatics. arXiv:2110.08471 [math.OC]
+        2. Projection onto the capped simplex. Weiran Wang and Canyi Lu.
+           arXiv:1503.01002v1 [cs.LG]
+    """
+
+    methods = {'sort': _sorting_simplexer, 'root': _root_simplexer}
 
     algorithm = methods[method]
 
@@ -144,20 +174,18 @@ if __name__ == '__main__':
     import time
 
     rng = np.random.default_rng(0)
-    y = rng.random((100000)) - 0.5
+    y = rng.random((4, 1000)) - 0.5
 
     t0 = time.perf_counter()
-    target = capped_simplexer(y, s=1, axis=-1, method='probability')
+    target = positive._sorting_simplexer(y, s=1, axis=0)
     print('Positive Simplexer time: ', time.perf_counter() - t0)
 
-    """
     t0 = time.perf_counter()
     res_sort = capped_simplexer(y, s=1, axis=0, method='sort')
     print('Sorting Simplexer time ', time.perf_counter() - t0)
-    """
 
     t0 = time.perf_counter()
-    res_root = capped_simplexer(y, s=1, axis=-1, method='root')
+    res_root = capped_simplexer(y, s=1, axis=0, method='root')
     print('Root Simplexer Time: ', time.perf_counter() - t0)
 
     #print(np.allclose(res_sort, target))
