@@ -1,4 +1,5 @@
 
+[comment]: # (Logo and Title)
 <h1 align="center">
     <img src="https://github.com/mscaudill/simplexers/blob/main/docs/imgs/logo.png" 
     style="width:600px;height:auto;"/>
@@ -21,3 +22,48 @@
 <a href="#Acknowledgements">Acknowledgements</a> 
 </p>
 
+
+# Dependencies
+
+Simplexers requires <b>Python <span>&#8805;</span> >= 3.8</b> and has the
+following dependencies:
+
+<table>
+
+<tr>
+    <th>package</th>
+    <th>pypi</th>
+    <th>conda</th>
+  </tr>
+
+<tr>
+    <td><a href="https://numpy.org/doc/stable/index.html#" 
+        target=_blank>numpy</a></td>
+    <td>https://pypi.org/project/numpy/</td>
+    <td align='center'><span>&#10003;</span></td>
+  </tr>
+
+<tr>
+    <td><a href="https://scipy.org/" 
+        target=_blank>scipy</a></td>
+    <td>https://pypi.org/project/scipy/</td>
+    <td align='center'><span>&#10003;</span></td>
+  </tr>
+
+<tr>
+    <td><a href="https://ipython.org/" 
+        target=_blank>ipython</a></td>
+    <td>https://pypi.org/project/ipython/</td>
+    <td align='center'><span>&#10003;</span></td>
+  </tr>
+
+<tr>
+    <td><a href=https://jupyter.org/ 
+        target=_blank>notebook</a></td>
+    <td>https://pypi.org/project/jupyter/</td>
+    <td align='center'><span>&#10003;</span></td>
+  </tr>
+
+<tr>
+
+</table>
