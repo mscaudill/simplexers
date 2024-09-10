@@ -1,3 +1,4 @@
+
 <h1 align="center">
     <img src="https://github.com/mscaudill/simplexers/blob/main/docs/imgs/logo.png" 
     style="width:600px;height:auto;"/>
@@ -7,6 +8,8 @@
   <i><font color='gray'>Euclidean Projections onto Positive and Capped Simplexes</font></i>
 </h2>
 
+
+[comment]: # (Navigation links)
 <p align="center"  style="font-size: 20px">
 <a href="#Key-Features">Key Features</a>   |  
 <a href="#Installation">Installation</a>   |  
