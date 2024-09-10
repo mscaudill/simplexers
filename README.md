@@ -25,7 +25,7 @@
 
 # Dependencies
 
-Simplexers requires <b>Python <span>&#8805;</span> >= 3.8</b> and has the
+Simplexers requires <b>Python <span>&#8805;</span> 3.8</b> and has the
 following dependencies:
 
 <table>
@@ -67,3 +67,37 @@ following dependencies:
 <tr>
 
 </table>
+
+# Attribution
+
+Please see the *Cite this repository* under the About section or the [citation
+file](https://github.com/mscaudill/openseize/blob/master/CITATION.cff).
+
+And if you really like Simplexers, consider starring the <a
+href=https://github.com/mscaudill/simplexers>repository</a> 
+<span>&#11088;</span>!
+
+# Contributions
+
+Contributions are what makes open-source fun and we would love for you to
+contribute. Please check out our [contribution guide](
+https://github.com/mscaudill/simplexers/blob/master/.github/CONTRIBUTING.md)
+to get started.
+
+# Issues
+
+Simplexers provides custom issue templates for filing bugs, requesting
+feature enhancements, suggesting documentation changes, or just asking
+questions. *Ready to discuss?* File an issue <a
+href=https://github.com/mscaudill/simplexers/issues/new/choose>here</a>. 
+
+# License
+
+Simplexers is licensed under the terms of the 3-Clause BSD License.
+
+# Acknowledgements
+
+**This work is generously supported through the Ting Tsung and Wei Fong Chao 
+Foundation and the National Institute of Neurological Disorders and Stroke 
+(Grant 2R01 NS100738-05A1).**
+
