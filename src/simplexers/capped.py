@@ -202,31 +202,3 @@ def capped_simplexer(
     result = algorithm(z, s, **kwargs)
 
     return result.T if axis == 0 else result
-
-
-if __name__ == '__main__':
-
-    import time
-
-    """
-    rng = np.random.default_rng(0)
-    y = rng.random((3, 4)) - 0.5
-
-    t0 = time.perf_counter()
-    target = positive._sorting_simplexer(y, s=1, axis=0)
-    print('Positive Simplexer time: ', time.perf_counter() - t0)
-
-    t0 = time.perf_counter()
-    res_sort = capped_simplexer(y, s=1, axis=0, method='sort')
-    print('Sorting Simplexer time ', time.perf_counter() - t0)
-
-    t0 = time.perf_counter()
-    res_root = capped_simplexer(y, s=1, axis=0, method='root')
-    print('Root Simplexer Time: ', time.perf_counter() - t0)
-
-    print(np.allclose(res_sort, target))
-    print(np.allclose(res_root, target))
-    """
-
-    q = np.atleast_2d(np.array([0, 0, 0, 0, 0, 2, 1], dtype=float))
-    test = _sorting_simplexer(q, s=2)
