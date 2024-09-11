@@ -34,8 +34,7 @@ dev = ["isort",
     "pylint",
     "black",
     "codespell",
-    "pytest",
-    "pytest-cov",
+    "pytest==7.4.4",
     "pytest-lazy-fixture",
     "bumpver",
     "mkdocs",
@@ -46,7 +45,7 @@ dev = ["isort",
     "build",
     "twine"
 ]
-test = ["pytest=7.4.4", "pytest-lazy-fixture"]
+test = ["pytest==7.4.4", "pytest-lazy-fixture"]
 
 [project.urls]
 Homepage = "https://github.com/mscaudill/simplexers"
