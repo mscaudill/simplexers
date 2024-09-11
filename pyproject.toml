@@ -46,7 +46,7 @@ dev = ["isort",
     "build",
     "twine"
 ]
-test = ["pytest", "pytest-cov", "pytest-lazy-fixture"]
+test = ["pytest", "pytest-lazy-fixture"]
 
 [project.urls]
 Homepage = "https://github.com/mscaudill/simplexers"
