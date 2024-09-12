@@ -49,11 +49,9 @@
 
 # About
 
-The s-capped simplex is defined as: $\Delta_{s}^{=} := \{$
-**_{x}_**
-$\in R^{n} \mid$
-**_{x}_**
- $^{T}\mathbf{1} = 1, \}$
+The s-capped simplex is defined as:
+```math
+\Delta_{s}^{=} := \{x \in \Bbb{R}^{n} \mid x^{T}{1} = 1, \}$
 
 
 # Installation
