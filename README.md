@@ -6,7 +6,7 @@
 </h1>
 
 <h2 align="center">
-  <i><font color='gray'>Euclidean Projections onto Positive and Capped Simplicess</font></i>
+  <i><font color='gray'>Euclidean Projections onto Positive and Capped Simplices</font></i>
 </h2>
 
 
@@ -55,13 +55,13 @@ The s-capped simplex is defined as:
  \mathbf{0} \leq \mathbf{x} \leq \mathbf{1} \}
 ```
 
-[comment]: # (simplex feasible region)
+[comment]: # (simplex feasible region image)
 <h1 align="center">
     <img src="https://github.com/mscaudill/simplexers/blob/main/docs/imgs/simplex_region.png" 
     style="width:300px;height:auto;"/>
 </h1>
 
-Geometrically, the simplex is a slice at $\mathbf{x}^T\mathbf{1} = s$ in
+Geometrically, the simplex is a slice at $\mathbf{x}^T\mathbf{1} = s$ of
 a hypercube $\mathbf{0} \leq \mathbf{x} \leq \mathbf{1}$ shown by the blue
 region in the image.
 
@@ -78,14 +78,22 @@ written as:
 \Delta_{s}^{=}\}
 ```
 
-
 ![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 This software computes the projection of vectors onto s-capped and positive
 simplices (simplics where $\mathbf{x}^*$'s components can be > 1) using sorting and fast root 
-finding of the Lagrangians' critical points.
+finding of the Lagrangian's critical points.
 [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf)
 [4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+```python
+import numpy as np
+from simplexers import capped
+
+rng = np.random.default_rng()
+x = rng.uniform(0, 3, size=(4, 100))
+projection = capped.capped_simplexer(x, s=1, axis=-1)
+```
 
 # Installation
 
@@ -110,7 +118,7 @@ $ source my_venv/bin/activate
 
 ### Conda Virtual Environment
 
-1. Download the openseize environment <a
+1. Download the simplexers environment <a
 href=https://github.com/mscaudill/simplexers/blob/master/environment.yml 
 target=_blank>configuration yaml</a> 
 
@@ -212,7 +220,7 @@ to get started.
 
 Simplexers provides custom issue templates for filing bugs, requesting
 feature enhancements, suggesting documentation changes, or just asking
-questions. *Ready to discuss?* File an issue <a
+questions. You can file an issue <a
 href=https://github.com/mscaudill/simplexers/issues/new/choose>here</a>. 
 
 # License
