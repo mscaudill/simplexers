@@ -50,7 +50,7 @@
 # About
 
 The s-capped simplex is defined as: 
-$$\Delta_{s}^{=} := \{\bm{x} \in \rm I\!R^{n} \mid \bmx^{T}\bm{1}}$$
+$$\Delta_{s}^{=} := \{\boldsymbol{x} \in \rm I\!R^{n} \mid \boldsymbolx^{T}\boldsymbol{1}}$$
 
 # Installation
 
