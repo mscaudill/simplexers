@@ -138,12 +138,12 @@ $ conda env create --file environment.yml
 
 3. Activate the `simplexers` environment.
 ```Shell
-$ conda activate openseize
+$ conda activate simplexers
 ```
 
 4. Install simplexers from pypi into your simplexers environment.
 ```Shell
-(openseize)$ pip install simplexers
+(simplexers)$ pip install simplexers
 ```
 
 ### From Source
@@ -214,7 +214,7 @@ following dependencies:
 # Attribution
 
 Please see the *Cite this repository* under the About section or the [citation
-file](https://github.com/mscaudill/openseize/blob/master/CITATION.cff).
+file](https://github.com/mscaudill/simplexes/blob/master/CITATION.cff).
 
 
 # Contributions

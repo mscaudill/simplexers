@@ -50,23 +50,6 @@ test = ["pytest==7.4.4", "pytest-lazy-fixture"]
 [project.urls]
 Homepage = "https://github.com/mscaudill/simplexers"
 
-
-# bumpver configuration
-[tool.bumpver]
-current_version = "1.0.0"
-version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
-commit_message = 'bump version {old_version} -> {new_version}'
-commit = true
-tag = true
-push = true
-
-[tool.bumpver.file_patterns]
-"pyproject.toml" = [
-    'current_version = "{version}"',
-    'version = "{version}"'
-]
-"src/simplexers/__init__.py" = ['__version__ = "{version}"']
-
 # inform type checkers simplexers supports annotations
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -109,3 +92,19 @@ quiet-level = 3
 [tool.black]
 line-length = 80
 skip-string-normalization = true
+
+# Bumpver configuration
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '^version = "{version}"',
+    '^current_version = "{version}"',
+]
+"src/simplexers/__init__.py" = ['__version__ == "{version}"']
