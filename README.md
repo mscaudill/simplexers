@@ -49,7 +49,7 @@
 
 # About
 
-The projection of a vector $ x \in \mathbb{R}^{N}$
+The projection of a vector $x \in \mathbb{R}^{N}$
 
 # Installation
 
