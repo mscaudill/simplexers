@@ -50,8 +50,10 @@
 # About
 
 The s-capped simplex is defined as:
-$$\Delta_{s}^{=} := \{\mathbf{x} \in \mathbb{R}^{n} \mid \sum_{i}^{n} x_i = s, \mathbf{0} \leq x \leq 1 \}$$
-
+```math
+\Delta_{s}^{=} := \{\mathbf{x} \in \mathbb{R}^{n} \mid \mathbf{x}^T\mathbf{1} = s,
+ \mathbf{0} \leq x \leq \mathbf{1} \}
+```
 
 # Installation
 
