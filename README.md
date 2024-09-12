@@ -78,10 +78,9 @@ written as:
 ```
 
 ** This software computes the projection of vectors onto s-capped and positive
-simplices (simplexes that allow $\mathbf{x}^*$ to have components greater than
-1) using sorting and fast Lagrangian root finding methods
+simplices (simplexes that allow $\mathbf{x}^*$ to have components greater than 1) using sorting and fast root finding of the Lagrangians' critical points.
 [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf)
-[4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
+[4](https://mblondel.org/publications/mblondel-icpr2014.pdf).**
 
 # Installation
 
