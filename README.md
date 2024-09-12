@@ -51,7 +51,8 @@
 
 The s-capped simplex is defined as:
 ```math
-\Delta_{s}^{=} := \{x \in \Bbb{R}^{n} \mid x^{T}{1} = 1, \}$
+\Delta_{s}^{=} := \{x \in \Bbb{R}^{n} \mid x^{T}{1} = 1, \}
+```
 
 
 # Installation
