@@ -77,13 +77,14 @@ written as:
 \frac{1}{2}\|\mathbf{x} - \mathbf{y}\|^2 \mid \mathbf{x} \in
 \Delta_{s}^{=}\}
 ```
-<div class="alert-info">
+
+```
 This software computes the projection of vectors onto s-capped and positive
 simplices (simplics where $\mathbf{x}^*$'s components can be > 1) using sorting and fast root 
 finding of the Lagrangians' critical points.
 [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf)
 [4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
-</div>
+```
 
 # Installation
 
