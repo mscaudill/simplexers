@@ -66,17 +66,22 @@ a hypercube $\mathbf{0} \leq \mathbf{x} \leq \mathbf{1}$ shown by the blue
 region in the image.
 
 Projecting a vector onto a simplex is an important subproblem that appears in
-imaging, statistics, and machine learning applications [1](https://link.springer.com/article/10.1007/s10107-015-0946-6) [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf) [3](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002185).
-
-The projection of vector $\mathbf{y}$ onto the simple amounts to finding a 
-vector $\mathbf{x}*$ that lives in the blue (feasible) region. This vector is
+imaging, statistics, and machine learning applications [1](https://link.springer.com/article/10.1007/s10107-015-0946-6) [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf) [3](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002185). The projection of vector $\mathbf{y}$ onto the simplex amounts to finding a 
+vector $\mathbf{x}*$ that lives in the blue (feasible) region that is *closest* to y. This vector is
 the lower dimensional *shadow* of $\mathbf{y}$. Formally, this projection is
 written as:
+
 ```math
 \mathbf{x}^* = proj_{\Delta_{s}^{=}}\left(\mathbf{y}\right) = \underset{x}{\mathrm{argmin}}\{
 \frac{1}{2}\|\mathbf{x} - \mathbf{y}\|^2 \mid \mathbf{x} \in
 \Delta_{s}^{=}\}
 ```
+
+** This software computes the projection of vectors onto s-capped and positive
+simplices (simplexes that allow $\mathbf{x}^*$ to have components greater than
+1) using sorting and fast Lagrangian root finding methods
+[2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf)
+[4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
 
 # Installation
 
