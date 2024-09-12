@@ -88,11 +88,18 @@ finding of the Lagrangian's critical points.
 
 ```python
 import numpy as np
-from simplexers import capped
+from simplexers import capped, positive
 
 rng = np.random.default_rng()
 x = rng.uniform(0, 3, size=(4, 100))
-projection = capped.capped_simplexer(x, s=1, axis=-1)
+
+# construct capped and positive projections
+capped_projection = capped.capped_simplexer(x, s=1, axis=-1)
+positive_projection = positive.positive_simplexer(x, s=1, axis=-1)
+
+# validate the sum of each of the 4 vectors is 1
+print(np.allclose(np.sum(capped_projection, axis=-1), 1))
+print(np.allclose(np.sum(positive_projection, axis=-1), 1))
 ```
 
 # Installation
