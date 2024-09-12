@@ -52,8 +52,18 @@
 The s-capped simplex is defined as:
 ```math
 \Delta_{s}^{=} := \{\mathbf{x} \in \mathbb{R}^{n} \mid \mathbf{x}^T\mathbf{1} = s,
- \mathbf{0} \leq x \leq \mathbf{1} \}
+ \mathbf{0} \leq \mathbf{x} \leq \mathbf{1} \}
 ```
+
+Geometrically, the simplex is a slice at $\mathbf{x}^T\mathbf{1} = s$ in
+a hypercube $\mathbf{0} \leq \mathbf{x} \leq \mathbf{1}$ shown by the blue
+region in the image.
+
+<h1 align="center">
+    <img src="https://github.com/mscaudill/simplexers/blob/main/docs/imgs/simplex_region.png" 
+    style="width:300px;height:auto;"/>
+</h1>
+
 
 # Installation
 
