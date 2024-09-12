@@ -79,7 +79,7 @@ written as:
 ```
 
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 This software computes the projection of vectors onto s-capped and positive
 simplices (simplics where $\mathbf{x}^*$'s components can be > 1) using sorting and fast root 
 finding of the Lagrangians' critical points.
