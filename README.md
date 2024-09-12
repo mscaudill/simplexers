@@ -73,16 +73,14 @@ vector $\mathbf{x}*$ that lives in the blue (feasible) region. This vector is
 the lower dimensional *shadow* of $\mathbf{y}$. Formally, this projection is
 written as:
 ```math
-\mathbf{x}* = proj_{\Delta_{s}^{=}}\left(\mathbf{y}\right) = \underset{x}{\mathrm{argmin}}\{
-\frac{1}{2}\|\|\mathbf{x} - \mathbf{y}\|\|^2 \mid \mathbf{x} \in
+\mathbf{x}^* = proj_{\Delta_{s}^{=}}\left(\mathbf{y}\right) = \underset{x}{\mathrm{argmin}}\{
+\frac{1}{2}\|\mathbf{x} - \mathbf{y}\|^2 \mid \mathbf{x} \in
 \Delta_{s}^{=}\}
 ```
 
 # Installation
 
-Simplexers is available on <a href=https://pypi.org/project/simplexers/" 
-                            target=_blank>pypi</a> for easy intallation into
-virtual environments.
+Simplexers is available on [pypi](https://pypi.org/project/simplexers/) for easy intallation into virtual environments.
 
 ### Python Virtual Environment
 
