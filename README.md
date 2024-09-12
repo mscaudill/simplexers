@@ -49,7 +49,8 @@
 
 # About
 
-The projection of a vector $x \in \mathbb{R}^{N}$
+The s-capped simplex is defined as: 
+$$ \delta_{s}^{=} := \{\boldsymbol{x} \in {\rm I\!R}^{n} \mid  $$
 
 # Installation
 
