@@ -69,7 +69,7 @@ Projecting a vector onto a simplex is an important subproblem that appears in
 imaging, statistics, and machine learning applications [1](https://link.springer.com/article/10.1007/s10107-015-0946-6) [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf) [3](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002185).
 The projection of vector $\mathbf{y}$ onto the simplex amounts to finding a 
 vector $\mathbf{x}*$ that lives in the blue (feasible) region that is *closest* to y. This vector is
-the lower dimensional *shadow* of $\mathbf{y}$. Formally, this projection is
+the *shadow* of $\mathbf{y}$. Formally, this projection is
 written as:
 
 ```math
@@ -86,6 +86,7 @@ finding of the Lagrangian's critical points.
 [4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
 ![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+### Example
 ```python
 import numpy as np
 from simplexers import capped, positive
