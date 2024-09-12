@@ -40,7 +40,7 @@ def random2D(rng, size, extrema):
     """A fixture that yields random arrays drawn from a uniform distribution
     with min and max extrema and size."""
 
-    yield rng.uniform(*extrema, size)
+    return rng.uniform(*extrema, size)
 
 @pytest.mark.parametrize('arr', [lazy_fixture('random2D')])
 @pytest.mark.parametrize('s', [1, 2, 3])
