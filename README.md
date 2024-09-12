@@ -49,9 +49,9 @@
 
 # About
 
-The s-capped simplex is defined as:
+The s-capped simplex is defined as: $\mathbf{x}$
 ```math
-\Delta_{s}^{=} := \{x \in \Bbb{R}^{n} \mid x^{T}{1} = 1, \}
+\Delta_{s}^{=} := \{x \in \mathbb{R}^{n} \mid x^{T}{1} = s, 0 \leq x \leq 1 \}
 ```
 
 
