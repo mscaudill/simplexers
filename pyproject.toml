@@ -107,4 +107,4 @@ push = true
     '^version = "{version}"',
     '^current_version = "{version}"',
 ]
-"src/simplexers/__init__.py" = ['__version__ == "{version}"']
+"src/simplexers/__init__.py" = ['__version__ = "{version}"']
