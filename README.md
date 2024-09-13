@@ -22,14 +22,16 @@
   </a>
   <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=gold">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
-    src="https://img.shields.io/badge/License-BSD%203--Clause-pink" 
+    src="https://img.shields.io/badge/License-BSD%203--Clause-firebrick" 
     alt="Simplexers is released under the BSD 3-Clause license." />
   </a>
   <a href="https://github.com/mscaudill/openseize/actions/workflows/test.yml"><img 
     src="https://img.shields.io/github/actions/workflow/status/mscaudill/simplexers/test.yml?label=CI&logo=github"
     alt="Simplexers' test status" />
   </a>
-  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+  <a href="https://github.com/mscaudill/openseize/pulls"><img 
+    src="https://img.shields.io/badge/PRs-welcome-F8A3A3"
+    alt="Pull Request Welcomed!" />
   </a>
 </p>
 
