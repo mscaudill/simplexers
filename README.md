@@ -12,7 +12,6 @@
 
 [comment]: # (Badges)
 <p align="center">
-
   <a href="https://zenodo.org/doi/10.5281/zenodo.13759339"><img 
     src="https://zenodo.org/badge/853310289.svg"
      alt="DOI">
@@ -23,7 +22,7 @@
   </a>
   <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=gold">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
-    src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
+    src="https://img.shields.io/badge/License-BSD%203--Clause-pink" 
     alt="Simplexers is released under the BSD 3-Clause license." />
   </a>
   <a href="https://github.com/mscaudill/openseize/actions/workflows/test.yml"><img 
