@@ -6,10 +6,13 @@ Functions:
             simplex.
 """
 
+from typing import Callable, Dict
+
 import numpy as np
 import numpy.typing as npt
 
 from simplexers.core import arraytools
+
 
 def _sorting_simplexer(arr: npt.NDArray, s: float) -> npt.NDArray:
     """Computes the Euclidean projection of each 1-D array in y along axis onto
@@ -48,16 +51,18 @@ def _sorting_simplexer(arr: npt.NDArray, s: float) -> npt.NDArray:
     indices = arraytools.redim(indices, css.shape, axis=axis)
     # mus descend so count_nonzeros to get rho
     rho = np.count_nonzero(mus - css / indices > 0, axis=axis, keepdims=True)
-    thetas = np.take_along_axis(css, rho-1, axis=axis) / rho
+    thetas = np.take_along_axis(css, rho - 1, axis=axis) / rho
 
-    return np.maximum(v - thetas, 0)
+    result: npt.NDArray = np.maximum(v - thetas, 0)
+    return result
+
 
 def positive_simplexer(
-        arr: npt.NDArray,
-        s: float,
-        axis: int = -1,
-        method: str = 'sort',
-        **kwargs,
+    arr: npt.NDArray,
+    s: float,
+    axis: int = -1,
+    method: str = 'sort',
+    **kwargs,
 ) -> npt.NDArray:
     """Computes the Euclidean projection of each 1-D array in y along axis onto
     the positive simplex.
@@ -95,11 +100,14 @@ def positive_simplexer(
         raise ValueError(msg)
 
     # more methods such as bisection will later be added
+    # duplicates capped_simplexer but refactoring reduces clarity
+    # pylint: disable=duplicate-code
     methods: Dict[str, Callable] = {'sort': _sorting_simplexer}
     algorithm = methods[method]
 
     z = np.atleast_2d(arr)
     z = z.T if axis == 0 else z
-    result = algorithm(z, s, **kwargs)
+    result: npt.NDArray = algorithm(z, s, **kwargs)
+    # pylint: enable=duplicate-code
 
     return result.T if axis == 0 else result
