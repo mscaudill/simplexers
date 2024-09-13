@@ -12,26 +12,37 @@
 
 [comment]: # (Badges)
 <p align="center">
-  <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
-    src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
-    alt="Simplexers is released under the BSD 3-Clause license." />
+
+  <a href="https://zenodo.org/doi/10.5281/zenodo.13759339"><img 
+    src="https://zenodo.org/badge/853310289.svg"
+     alt="DOI">
   </a>
+  
   <a href="https://pypi.org/project/openseize/"><img 
     src="https://img.shields.io/pypi/v/openseize?color=78437E&logo=pypi&logoColor=white" 
     alt="Openseize pypi release" />
   </a>
+
   <a href="https://github.com/mscaudill/openseize/tree/master#Dependencies"><img 
     src="https://img.shields.io/pypi/pyversions/openseize?logo=python&logoColor=gold" 
     alt="Python versions supported." />
   </a>
-  <a href="https://github.com/mscaudill/openseize/actions/workflows/test.yml"><img 
-    src="https://img.shields.io/github/actions/workflow/status/mscaudill/simplexers/test.yml?label=CI&logo=github" 
-    alt="Simplexers' test status" />
+  
+  <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
+    src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
+    alt="Simplexers is released under the BSD 3-Clause license." />
   </a>
- <a href="https://github.com/mscaudill/openseize/pulls"><img 
+
+  <a href="https://github.com/mscaudill/openseize/pulls"><img 
     src="https://img.shields.io/badge/PRs-welcome-F8A3A3"
     alt="Pull Request Welcomed!" />
   </a>
+  
+  <a href="https://github.com/mscaudill/openseize/actions/workflows/test.yml"><img 
+    src="https://img.shields.io/github/actions/workflow/status/mscaudill/simplexers/test.yml?label=CI&logo=github"
+    alt="Simplexers' test status" />
+  </a>
+
 </p>
 
 

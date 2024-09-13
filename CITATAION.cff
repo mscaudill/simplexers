@@ -1,0 +1,11 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Caudill"
+  given-names: "Matthew S."
+  orcid: "https://orcid.org/0000-0002-3656-9261"
+title: "Simplexers: Vector projections onto positive and capped simplices"
+version: 1.0.0
+doi: 10.5281/zenodo.13759340
+date-released: 2024-9-12
+url: "https://github.com/mscaudill/simplexers"
