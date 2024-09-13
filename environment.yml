@@ -1,0 +1,10 @@
+# requirements for simplexers standard environment
+name: simplexers
+dependencies:
+  - numpy
+  - scipy
+  - ipython
+  - notebook
+  - pip
+  - pip:
+    - simplexers

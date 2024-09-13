@@ -121,7 +121,7 @@ $ source my_venv/bin/activate
 
 3. Install openseize into your virtual environment
 ```Shell
-(my_venv)$ pip install openseize
+(my_venv)$ pip install simplexers
 ```
 
 ### Conda Virtual Environment
@@ -139,11 +139,6 @@ $ conda env create --file environment.yml
 3. Activate the `simplexers` environment.
 ```Shell
 $ conda activate simplexers
-```
-
-4. Install simplexers from pypi into your simplexers environment.
-```Shell
-(simplexers)$ pip install simplexers
 ```
 
 ### From Source
