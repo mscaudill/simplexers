@@ -1,6 +1,6 @@
 """Module of tools for manipulating the size and values of ndarrays."""
 
-from typing import Sequence
+from typing import Optional, Tuple
 
 import numpy as np
 import numpy.typing as npt
@@ -11,12 +11,14 @@ def is_array1D(x: npt.NDArray):
 
     return True if isinstance(x, np.ndarray) and x.ndim == 1 else False
 
+
 def is_array2D(x: npt.NDArray):
     """Returns True if x is an ndarray type and has two dim."""
 
     return True if isinstance(x, np.ndarray) and x.ndim == 2 else False
 
-def normalize_axis(axis, ndim):
+
+def normalize_axis(axis: int, ndim: int):
     """Returns a positive axis index for a supplied axis index of an ndim
     array.
 
@@ -30,36 +32,62 @@ def normalize_axis(axis, ndim):
     axes = np.arange(ndim)
     return axes[axis]
 
-def pad_along_axis(arr, pad, axis=-1, **kwargs):
+
+def pad_along_axis(
+    arr: npt.NDArray,
+    pad: int | Tuple[int, int],
+    axis: int = -1,
+    **kwargs,
+) -> npt.NDArray:
     """Wrapper for numpy pad allowing before and after padding along
     a single axis.
 
     Args:
-        arr (ndarray):              ndarray to pad
-        pad (int or array-like):    number of pads to apply before the 0th
-                                    and after the last index of array along
-                                    axis. If int, pad number of pads will be
-                                    added to both
-        axis (int):                 axis of arr along which to apply pad.
-                                    Default pads along last axis.
-        **kwargs:                   any valid kwarg for np.pad
+        arr:
+            An ndarray to pad.
+        pad:
+            The number of pads to apply before the 0th and after the last index
+            of array along axis. If int, pad number of pads will be added to
+            both.
+        axis:
+            The axis of arr along which to apply pad.  Default pads along last
+            axis.
+        **kwargs:
+            Any valid kwarg for np.pad.
+
+    Returns:
+        A padded numpy array.
     """
 
-    #convert int pad to seq. of pads & place along axis of pads
-    pad = [pad, pad] if isinstance(pad, int) else pad
-    pads = [(0,0)] * arr.ndim
-    pads[axis] = pad
+    # convert int pad to seq. of pads & place along axis of pads
+    p = (pad, pad) if isinstance(pad, int) else pad
+    pads = [(0, 0)] * arr.ndim
+    pads[axis] = p
     return np.pad(arr, pads, **kwargs)
 
-def slice_along_axis(arr, start=None, stop=None, step=None, axis=-1):
+
+def slice_along_axis(
+    arr: npt.NDArray,
+    start: Optional[int] = None,
+    stop: Optional[int] = None,
+    step: Optional[int] = None,
+    axis: int = -1,
+) -> npt.NDArray:
     """Returns slice of arr along axis from start to stop in 'step' steps.
 
     (see scipy._arraytools.axis_slice)
 
     Args:
-        arr (ndarray):              an ndarray to slice
-        start, stop, step (int):    passed to slice instance
-        axis (int):                 axis of array to slice along
+        arr:
+            An ndarray to slice along axis.
+        start:
+            The start of the slice along axis inclusive.
+        stop:
+            The stop of the slice along axis exclusive.
+        step:
+            The step between start and stop of slice along axis.
+        axis:
+            The axis of arr to slice along.
 
     Returns: sliced ndarray
     """
@@ -68,7 +96,8 @@ def slice_along_axis(arr, start=None, stop=None, step=None, axis=-1):
     slicer[axis] = slice(start, stop, step)
     return arr[tuple(slicer)]
 
-def redim(x: npt.NDArray, shape: Sequence, axis: int):
+
+def redim(x: npt.NDArray, shape: Tuple[int, ...], axis: int) -> npt.NDArray:
     """Increases the dimensionality of a 0D or 1D array by embedding x into
     a ndim array whose shape is one along all axes except the embedding axis.
 
@@ -116,4 +145,3 @@ def redim(x: npt.NDArray, shape: Sequence, axis: int):
     outshape[ax] = len(x)
 
     return x.reshape(*outshape)
-
