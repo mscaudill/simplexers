@@ -199,6 +199,6 @@ def capped_simplexer(
 
     z = np.atleast_2d(arr)
     z = z.T if axis == 0 else z
-    result = algorithm(z, s, **kwargs)
+    result: npt.NDArray = algorithm(z, s, **kwargs)
 
     return result.T if axis == 0 else result
