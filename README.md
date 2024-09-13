@@ -21,10 +21,7 @@
     src="https://img.shields.io/pypi/v/openseize?color=78437E&logo=pypi&logoColor=white" 
     alt="Openseize pypi release" />
   </a>
-  <a href="https://github.com/mscaudill/openseize/tree/master#Dependencies"><img 
-    src="https://img.shields.io/pypi/pyversions/openseize?logo=python&logoColor=gold" 
-    alt="Python versions supported." />
-  </a>
+  <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=blue&color=gold">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
     src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
     alt="Simplexers is released under the BSD 3-Clause license." />
