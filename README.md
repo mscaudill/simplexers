@@ -12,7 +12,10 @@
 
 [comment]: # (Badges)
 <p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13759340-firebrick?style=flat&link=https%3A%2F%2Fzenodo.org%2Fdoi%2F10.5281%2Fzenodo.13759339">
+  <a href="https://zenodo.org/doi/10.5281/zenodo.13759339"><img
+   src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13759340-lightsteelblue?style=flat&link=https%3A%2F%2Fzenodo.org%2Fdoi%2F10.5281%2Fzenodo.13759339"
+   alt="DOI"/>
+  </a>
   <a href="https://pypi.org/project/openseize/"><img 
     src="https://img.shields.io/pypi/v/openseize?color=78437E&logo=pypi&logoColor=white" 
     alt="Openseize pypi release" />
