@@ -46,6 +46,7 @@ dev = ["isort",
     "twine"
 ]
 test = ["pytest==7.4.4", "pytest-lazy-fixture"]
+lint = ["pylint"]
 
 [project.urls]
 Homepage = "https://github.com/mscaudill/simplexers"
