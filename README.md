@@ -12,15 +12,13 @@
 
 [comment]: # (Badges)
 <p align="center">
-  <a href="https://zenodo.org/doi/10.5281/zenodo.13759339"><img 
-    src="https://zenodo.org/badge/853310289.svg"
-     alt="DOI">
+  <img alt="Static Badge" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13759340-firebrick?style=flat&cacheSeconds=https%3A%2F%2Fzenodo.org%2Fdoi%2F10.5281%2Fzenodo.13759339">
   </a>
   <a href="https://pypi.org/project/openseize/"><img 
     src="https://img.shields.io/pypi/v/openseize?color=78437E&logo=pypi&logoColor=white" 
     alt="Openseize pypi release" />
   </a>
-  <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=gold">
+  <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=blue">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
     src="https://img.shields.io/badge/License-BSD%203--Clause-firebrick" 
     alt="Simplexers is released under the BSD 3-Clause license." />
