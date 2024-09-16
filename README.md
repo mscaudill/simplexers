@@ -21,15 +21,15 @@
   <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=blue">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
     src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
-    alt="Simplexers is released under the BSD 3-Clause license." />
+    alt="Simplexers is released under the BSD 3-Clause license."/>
   </a>
   <a href="https://github.com/mscaudill/openseize/actions/workflows/test.yml"><img 
     src="https://img.shields.io/github/actions/workflow/status/mscaudill/simplexers/test.yml?label=CI&logo=github"
-    alt="Simplexers' test status" />
+    alt="Simplexers' test status"/>
   </a>
   <a href="https://github.com/mscaudill/simplexers/pulls"><img 
     src="https://img.shields.io/badge/PRs-welcome-F8A3A3"
-    alt="Pull Request Welcomed!" />
+    alt="Pull Request Welcomed!"/>
   </a>
 </p>
 
