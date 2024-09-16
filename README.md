@@ -16,7 +16,7 @@
    src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13759340-lightsteelblue?style=flat&link=https%3A%2F%2Fzenodo.org%2Fdoi%2F10.5281%2Fzenodo.13759339"
    alt="DOI"/>
   </a>
-  <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/simplexers?logo=pypi&logoColor=white&logoSize=auto&color=purple">
+  <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/simplexers?logo=pypi&logoColor=white&logoSize=auto&color=purple&link=https%3A%2F%2Fpypi.org%2Fproject%2Fsimplexers%2F">
   <img alt="Python Version from PEP 621 TOML" src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fmscaudill%2Fsimplexers%2Fmain%2Fpyproject.toml&style=flat&logo=python&logoColor=gold&labelColor=gray&color=blue">
   <a href="https://github.com/mscaudill/simplexers/blob/main/LICENSE"><img
     src="https://img.shields.io/badge/License-BSD%203--Clause-teal" 
