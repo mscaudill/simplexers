@@ -29,7 +29,7 @@
     src="https://img.shields.io/github/actions/workflow/status/mscaudill/simplexers/test.yml?label=CI&logo=github"
     alt="Simplexers' test status" />
   </a>
-  <a href="https://github.com/mscaudill/openseize/pulls"><img 
+  <a href="https://github.com/mscaudill/simplexers/pulls"><img 
     src="https://img.shields.io/badge/PRs-welcome-F8A3A3"
     alt="Pull Request Welcomed!" />
   </a>
@@ -81,8 +81,8 @@ written as:
 
 ![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 This software computes the projection of vectors onto s-capped and positive
-simplices (simplics where $\mathbf{x}^*$'s components can be > 1) using sorting and fast root 
-finding of the Lagrangian's critical points.
+simplices (simplices where $\mathbf{x}^*$'s components can be > 1) using sorting methods and fast root 
+finding methods of the Lagrangian's critical points.
 [2](https://proceedings.neurips.cc/paper/2021/file/52aaa62e71f829d41d74892a18a11d59-Paper.pdf)
 [4](https://mblondel.org/publications/mblondel-icpr2014.pdf).
 ![-](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
