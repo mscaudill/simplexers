@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 keywords = ["machine learning", "large-scale optimization"]
 
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python",
     "License :: OSI Approved :: BSD License",
