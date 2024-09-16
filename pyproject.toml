@@ -24,12 +24,13 @@ classifiers = [
 dependencies = [
     "numpy",
     "scipy",
-    "ipython",
-    "notebook",
 ]
 
 [project.optional-dependencies]
-dev = ["isort",
+dev = [
+    "ipython",
+    "notebook",
+    "isort",
     "mypy",
     "pylint",
     "black",
@@ -37,13 +38,9 @@ dev = ["isort",
     "pytest==7.4.4",
     "pytest-lazy-fixture",
     "bumpver",
-    "mkdocs",
-    "mkdocs-material",
-    "mkdocstrings[python]",
-    "mkdocs-jupyter",
     "pip-tools",
     "build",
-    "twine"
+    "twine",
 ]
 test = ["pytest==7.4.4", "pytest-lazy-fixture"]
 lint = ["pylint"]
@@ -51,10 +48,10 @@ lint = ["pylint"]
 [project.urls]
 Homepage = "https://github.com/mscaudill/simplexers"
 
-# inform type checkers simplexers supports annotations
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# inform type checkers simplexers supports annotations
 [tool.setuptools.package-data]
 simplexers = ["py.typed"]
 

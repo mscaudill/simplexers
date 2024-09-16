@@ -3,8 +3,6 @@ name: simplexers
 dependencies:
   - numpy
   - scipy
-  - ipython
-  - notebook
   - pip
   - pip:
     - simplexers

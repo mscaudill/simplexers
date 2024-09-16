@@ -6,8 +6,7 @@ dependencies:
   - ipython
   - notebook
   # testing
-  - pytest
-  - pytest-cov
+  - pytest==7.4.4
   # Linting and formatting
   - isort
   - mypy
@@ -22,11 +21,6 @@ dependencies:
       - pytest-lazy-fixture
       # versioning
       - bumpver
-      # doc builders
-      - mkdocs
-      - mkdocs-material
-      - "mkdocstrings[python]"
-      - mkdocs-jupyter
       # packaging
       - pip-tools
       - build
